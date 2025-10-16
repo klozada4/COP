@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kayla Lozada: Forms Assignment</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: "Comic Sans MS", "Poppins", sans-serif;
+            text-align: center;
+            margin: 40px;
+            color: #444;
+        }
+
+        h1 {
+            color: #ff66b2;
+            text-shadow: 1px 1px #ffd6e7;
+        }
+
+        form {
+            background-color: #fff0f8;
+            border: 3px solid #ff99cc;
+            border-radius: 20px;
+            padding: 30px 40px;
+            display: inline-block;
+            text-align: left;
+            box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.6);
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"], 
+        input[type="password"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #ffb6c1;
+            border-radius: 10px;
+            background-color: #fffafc;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #ff66b2;
+            box-shadow: 0 0 5px #ffb6c1;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: #ff66b2;
+        }
+
+        input[type="submit"] {
+            background-color: #ff99cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff66b2;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #ff66b2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kayla Lozada: Forms Assignment 💕</h1>
+
+    <img src="valencia_logo.png" alt="Valencia Logo" width="150">
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Colors:</td>
+                <td>
+                    <input type="checkbox" name="color" value="red"> Red
+                    <input type="checkbox" name="color" value="white"> White
+                    <input type="checkbox" name="color" value="blue"> Blue
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Sport:</td>
+                <td>
+                    <select name="sport">
+                        <option>Basketball</option>
+                        <option>Soccer</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                        <option>Swimming</option>
+                        <option>Baseball</option>
+                        <option>Running</option>
+                        <option>Cheerleading</option>
+                        <option>Gymnastics</option>
+                        <option>Hiking</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Write about Global Warming:</td>
+                <td>
+                    <textarea name="globalwarming" rows="20" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Password (max 10 characters):</td>
+                <td><input type="password" name="password" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>Upload a File:</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <p><a href="biopage.html">Back to Home 🏠</a></p>
+
+</body>
+</html>
